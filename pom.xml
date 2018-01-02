@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>ua.svadja</groupId>
+	<artifactId>lo-convertor</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<properties>
+		<libreoffice-version>5.4.2</libreoffice-version>
+	</properties>
+
+	<packaging>jar</packaging>
+
+	<dependencies>
+		<!-- libreoffice -->
+		<dependency>
+			<groupId>org.libreoffice</groupId>
+			<artifactId>juh</artifactId>
+			<version>${libreoffice-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.libreoffice</groupId>
+			<artifactId>jurt</artifactId>
+			<version>${libreoffice-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.libreoffice</groupId>
+			<artifactId>ridl</artifactId>
+			<version>${libreoffice-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.libreoffice</groupId>
+			<artifactId>unoil</artifactId>
+			<version>${libreoffice-version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.jeremysolarz/bootstrap-connector -->
+		<dependency>
+			<groupId>com.github.jeremysolarz</groupId>
+			<artifactId>bootstrap-connector</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+</project>

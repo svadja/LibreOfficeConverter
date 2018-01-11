@@ -41,7 +41,7 @@ public class Converter {
 		OutputStream out = new ByteArrayOutputStream();
 		try {
 			String sPipeName = "uno" + Long.toString((new Random()).nextLong() & 0x7fffffffffffffffL);
-			OOoServer server = createLOServerWithPipe(this.loFolder, sPipeName);
+			OOoServer server = createLOServerWithPipe(sPipeName);
 			bootstrapConnector = new BootstrapConnector(server);
 			XComponentContext xContext = bootstrapConnector.connect("",
 					"uno:pipe,name=" + sPipeName + ";urp;StarOffice.ComponentContext");
@@ -85,7 +85,7 @@ public class Converter {
 		return out;
 	}
 
-	private OOoServer createLOServerWithPipe(String loFolder, String pipeName) {
+	private OOoServer createLOServerWithPipe(String pipeName) {
 		List<String> options = OOoServer.getDefaultOOoOptions();
 		options.add("--accept=pipe,name=" + pipeName + ";urp;");
 		options.add("--nofirststartwizard");

@@ -35,13 +35,11 @@
 			<artifactId>unoil</artifactId>
 			<version>${libreoffice-version}</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.github.jeremysolarz/bootstrap-connector -->
 		<dependency>
 			<groupId>com.github.jeremysolarz</groupId>
 			<artifactId>bootstrap-connector</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
